@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Assis - Engenheiro de Machine Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
+
+    <canvas id="nav-canvas"></canvas>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bruno Assis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-5">
+                    <div class="col-lg-5 col-md-4 text-center">
+                        <img src="assets/Profile_Picture.jpg" alt="Sua Foto"
+                            class="img-fluid rounded-circle profile-pic">
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+                        <p class="lead">
+                            Sou um profissional de <span class="highlight">Inteligência Artificial</span> e <span
+                                class="highlight">Machine Learning</span> com mais de 6 anos de experiência. Minha
+                            especialização está em <span class="highlight">Deep Learning</span> e sou apaixonado por
+                            transformar dados em soluções inteligentes, com foco em projetos de larga escala que
+                            abrangem o ciclo de vida completo de sistemas de IA, desde a concepção até a produção.
+                        </p>
+                        <p class="lead">
+                            Minha atuação é ampla e inclui a modelagem e o desenvolvimento de modelos complexos com
+                            Python, TensorFlow e PyTorch, a engenharia e o gerenciamento de dados em ambientes SQL e
+                            NoSQL, e a entrega de resultados através de APIs e visualizações interativas. Além disso,
+                            tenho experiência em MLOps para garantir a performance e a segurança de sistemas em
+                            produção. Busco novos desafios como Cientista de Dados ou Engenheiro de ML para aplicar
+                            minha experiência e gerar valor através da resolução de problemas complexos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Habilidades</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="card skill-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Python</h5>
+                                <p class="card-text">Linguagem principal para desenvolvimento de modelos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card skill-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Scikit-learn</h5>
+                                <p class="card-text">Biblioteca para aprendizado de máquina clássico.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card skill-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">TensorFlow/PyTorch</h5>
+                                <p class="card-text">Frameworks para Deep Learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Projetos</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="assets/arvore.png" class="card-img-top" alt="Imagem do Projeto">
+                            <div class="card-body">
+                                <h5 class="card-title">Classificação de solo por satélite</h5>
+                                <p class="card-text">Desenvolvimento de um modelo de visão computacional para
+                                    classificar imagens de flores utilizando uma rede neural convolucional.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Ver no GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="assets/clusters_finais.png" class="card-img-top" alt="Imagem do Projeto">
+                            <div class="card-body">
+                                <h5 class="card-title">Classificação de flores iris</h5>
+                                <p class="card-text">Criação de um sistema de NLP para analisar sentimentos em reviews
+                                    de produtos, utilizando LSTMs.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Ver no GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="assets/matriz_confusao_knn.png" class="card-img-top" alt="Imagem do Projeto">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 3: Previsão de Vendas</h5>
+                                <p class="card-text">Aplicação de modelos de séries temporais para prever vendas de uma
+                                    empresa, otimizando o estoque.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Ver no GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Contato</h2>
+                <p class="lead">Gostaria de falar sobre Machine Learning ou uma oportunidade de trabalho? Entre em
+                    contato!</p>
+                <div class="contact-links mt-4">
+                    <a href="https://www.linkedin.com/in/bruno-assys/" target="_blank"
+                        class="btn btn-outline-light me-2"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
+                    <a href="https://github.com/Assyss" target="_blank" class="btn btn-outline-light"><i
+                            class="fab fa-github me-2"></i>GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-3 text-center">
+        <div class="container">
+            <p class="mb-0">© 2024 Bruno Assis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+/* Estilos Gerais */
+body {
+    padding-top: 80px;
+    background-color: #0d1117;
+    background-image: radial-gradient(circle, #1a202c 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #c9d1d9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navegação */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Mais grossa para o nome */
+    color: #c9d1d9 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Peso normal para os links */
+    color: #c9d1d9 !important;
+    position: relative; /* Necessário para a animação do sublinhado */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Efeito de destaque */
+.nav-link:hover {
+    color: #58a6ff !important;
+    transform: translateY(-2px); /* Efeito de elevação sutil */
+}
+
+/* Efeito de sublinhado animado */
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #58a6ff;
+    transition: width .3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Estilo para esconder a navbar */
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+#about {
+    background-image: linear-gradient(to right, #161b22, #0d1117);
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px rgba(88, 166, 255, 0.1), 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic {
+    border: 3px solid #58a6ff;
+    animation: pulse-glow 2s infinite ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Um pequeno zoom ao passar o mouse */
+}
+
+.highlight {
+    background: linear-gradient(45deg, #58a6ff, #47b2c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(88, 166, 255, 0.5);
+}
+
+/* Seções */
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Imagem de perfil */
+/* Efeito de brilho na foto (sem animação) */
+.profile-pic {
+    border: 3px solid #58a6ff;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
+}
+
+
+/* Cartões de Habilidades e Projetos */
+.card {
+    background-color: #1f2a37; /* Cor de fundo mais clara para o cartão */
+    border: 1px solid #4a5568; /* Borda mais visível */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(88, 166, 255, 0.4);
+}
+
+.skill-card {
+    border-left: 3px solid #58a6ff;
+}
+
+.project-card .card-img-top {
+    border-bottom: 1px solid #4a5568;
+}
+
+/* Ajuste no texto dos cartões para melhor legibilidade */
+.card-title {
+    color: #e2e8f0; /* Título um pouco mais claro */
+}
+
+.card-text {
+    color: #a0aec0; /* Cor do texto para contraste */
+}
+
+.project-card .card-img-top {
+    border-bottom: 1px solid #30363d;
+}
+
+/* Botões de Contato */
+.btn-outline-light {
+    color: #58a6ff;
+    border-color: #58a6ff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+/* Rodapé */
+footer {
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
+}
+
+#nav-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca o canvas atrás da navegação */
+    opacity: 0.3; /* Define a transparência para não atrapalhar a leitura */
+}
+
+@keyframes glow-border {
+    0% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.4); }
+    50% { box-shadow: 0 0 10px rgba(88, 166, 255, 0.8), 0 0 20px rgba(88, 166, 255, 0.4); }
+    100% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.4); }
+}
+
+/* Estilo do botão de Contato (no final do seu style.css) */
+.btn-outline-light {
+    color: #58a6ff;
+    border-color: #58a6ff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+    transform: translateY(-2px);
+}
+
+/* Estilo do botão de Projeto */
+.btn-primary {
+    background-color: #58a6ff;
+    border-color: #58a6ff;
+    color: #0d1117;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #4895e6;
+    border-color: #4895e6;
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.8);
+    animation: glow-border 1.5s infinite ease-in-out;
+}
